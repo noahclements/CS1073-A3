@@ -21,10 +21,11 @@ public class Scratch {
 		} 
 	}
 } 
-
-} 
-
+} if(input == 1){
 	System.out.println("Definitley scratch it!");
+}
+
+
 
 
 
