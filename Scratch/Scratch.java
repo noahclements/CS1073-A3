@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Scratch {
 	public static void main(String[] args) {
 
-		Scanner scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);		// add comments before submitting 
 
 		System.out.println("Am I supposed to scratch it?");
 		int input = scan.nextInt();
