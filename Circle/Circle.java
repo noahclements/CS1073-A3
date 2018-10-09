@@ -72,14 +72,13 @@ public class Circle{
 		
 		if(contains(input) == true) {
 			return 0;
-		
-		else if(intersects(input) == true) {
+		} else if(intersects(input) == true) {
 			return 0;
 		} else { 
 			return center.distance(input.getCenter()) - radius - input.getRadius();		
 		}
 	}	 
-}
+
 
 	public boolean intersects(Circle input) {
 		boolean intersects;
@@ -93,7 +92,13 @@ public class Circle{
 	
 	
 	public boolean contains(Circle other) {
+		double circleDistance = radius - other.getRadius();
 
+		if(center.distance(other.getCenter()) <= (radius - other.getRadius())) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 
