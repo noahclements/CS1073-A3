@@ -13,9 +13,9 @@ public class TestDriver {
 		System.out.println(C2.getRadius());
 
 		//C1.intersects(C2);
-		System.out.println(C1.distanceTo(C2.getCenter()));
+		System.out.println(C1.distanceTo(C2));
 
-		System.out.println(C1.distanceTo(C4.getCenter()));
+		System.out.println(C1.distanceTo(C4));
 
 
 

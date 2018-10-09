@@ -68,35 +68,36 @@ public class Circle{
 		radius = radiusIn;
 	}
 
-	public double distanceTo(CartesianPoint input) {
+	public double distanceTo(Circle input) {
+		/*
 		if(contains(input) == true) {
 			return 0;
-		} else if(intersects(input) == true) {
+		if(intersects(input) == true) {
 			return 0;
-		} else {
-			return center.distance(input);
+		} else { */
+			return center.distance(input.getCenter()) - radius;		
 		}
 		 
-	}
-
-	public boolean intersects(CartesianPoint input) {
+	//}
+/*
+	public boolean intersects(Circle input) {
 		boolean intersects;
-		if(center.distance(center) < radius + getRadius()) {
+		if(center.distance(input.getCenter()) < radius + input.getRadius()) {
 			intersects = true;
 		} else {
 			intersects = false;
 		}
 		return intersects;
 	}
-
+	*/ 
+	/*
 	public boolean contains(Circle other) {
-	
-		
+
 	}
 
 
 	public boolean contains(CartesianPoint input) {
-		
+
 	}
-	
+	*/
 }
