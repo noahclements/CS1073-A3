@@ -13,7 +13,6 @@ public class Circle{
 	*/
 	private CartesianPoint center;
 
-	private boolean intersects;
 	/**
 		Creates a circle object with the given center point and radius
 
@@ -70,9 +69,10 @@ public class Circle{
 	}
 
 	public double distanceTo(CartesianPoint input) {
-		if(containsCartesianPoint(input) == true) {
-				return 0;
-			
+		if(contains(input) == true) {
+			return 0;
+		} else if(intersects(input) == true) {
+			return 0;
 		} else {
 			return center.distance(input);
 		}
@@ -80,27 +80,23 @@ public class Circle{
 	}
 
 	public boolean intersects(CartesianPoint input) {
-		if(center.distance(center) == 0) {
+		boolean intersects;
+		if(center.distance(center) < radius + getRadius()) {
 			intersects = true;
 		} else {
 			intersects = false;
 		}
 		return intersects;
 	}
-/*
-	public boolean containsCircle(Circle other) {
-		if(center - other)
+
+	public boolean contains(Circle other) {
+	
+		
 	}
 
-*/
-	public boolean containsCartesianPoint(CartesianPoint input) {
-		boolean containsCartesian;
-		if(center.distance(input) < radius + getRadius()) {
-			containsCartesian = true;	
-		} else {
-			containsCartesian = false;
-		}
-		return containsCartesian;
+
+	public boolean contains(CartesianPoint input) {
+		
 	}
 	
 }
