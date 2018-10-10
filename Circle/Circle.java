@@ -88,7 +88,7 @@ public class Circle{
 
 	/**
 		checks to see if one circle intercepts with another circle 
-		@param input Circle constructor method
+		@param input the circle were comparing to
 		@return returns whether a circle intercepts with another circle
 	*/
 	public boolean intersects(Circle input) {
@@ -104,7 +104,7 @@ public class Circle{
 	
 	/**
 		Checks to see if a circle contains another circle within it
-		@param other Circle constructor method
+		@param other the circle were comparing to
 		@return returns whether a circle contains another circle within it
 	*/
 	public boolean contains(Circle other) {
@@ -122,7 +122,7 @@ public class Circle{
 
 	/**
 		Checks to see if a circle contains another circle within it
-		@param input CartesianPoint constructor method
+		@param input the CartesianPoint were comparing to
 	*/
 	public boolean contains(CartesianPoint input) {
 		//radius minus the distance from center to point 

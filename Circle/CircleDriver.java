@@ -1,4 +1,8 @@
-public class TestDriver {
+/** 
+	Represents the driver class for the CartesianPoint and Circle class
+	@author Noah Clements 3585596
+*/
+public class CircleDriver {
 	public static void main(String [] args) {
 
 		Circle C1 = new Circle(150, 150, 70);
