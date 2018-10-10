@@ -109,7 +109,6 @@ public class Circle{
 		@return returns a boolean to tell whether a circle contains another circle within it
 	*/
 	public boolean contains(Circle other) {
-		//double circleDistance = radius - other.getRadius();
 		boolean containsCircle;
 		if(center.distance(other.getCenter()) <= (radius - other.getRadius())) {	
 		// if the distance between two center points of circles is less than or equal to the radius of the first circle 
