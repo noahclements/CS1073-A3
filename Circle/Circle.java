@@ -94,8 +94,8 @@ public class Circle{
 	*/
 	public boolean intersects(Circle input) {
 		boolean intersects;
-		if(center.distance(input.getCenter()) < radius + input.getRadius()) {	
-		// if the distance between two center points of circles is LESS than both of the circle's radius' combined...
+		if(center.distance(input.getCenter()) <= radius + input.getRadius()) {	
+		// if the distance between two center points of circles is LESS than or equal to both of the circle's radius' combined...
 			intersects = true; // the boolean "intersects" would equal true 
 		} else {
 			intersects = false; // if the distance is MORE than both of the circle's radius' combined, the boolean would equal false
