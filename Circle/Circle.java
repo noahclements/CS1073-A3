@@ -1,6 +1,7 @@
 /**
 	Represents a Circle with a radius and a center point
 	@author CS 1073 Instructors
+	@author Noah Clements 3585596
 */
 public class Circle{
 	/**
@@ -71,7 +72,7 @@ public class Circle{
 	/**
 		determines the closest distance from one circle to another circle.
 		@param input Circle constructor method 
-		@return returns the closest distance from one circle to another
+		@return returns a double to tell the closest distance from one circle to another
 	*/
 	public double distanceTo(Circle input) {
 		double distanceTo;
@@ -89,7 +90,7 @@ public class Circle{
 	/**
 		checks to see if one circle intercepts with another circle 
 		@param input the circle were comparing to
-		@return returns whether a circle intercepts with another circle
+		@return returns a boolean to tell whether a circle intercepts with another circle
 	*/
 	public boolean intersects(Circle input) {
 		boolean intersects;
@@ -105,7 +106,7 @@ public class Circle{
 	/**
 		Checks to see if a circle contains another circle within it
 		@param other the circle were comparing to
-		@return returns whether a circle contains another circle within it
+		@return returns a boolean to tell whether a circle contains another circle within it
 	*/
 	public boolean contains(Circle other) {
 		//double circleDistance = radius - other.getRadius();
@@ -121,8 +122,9 @@ public class Circle{
 	}
 
 	/**
-		Checks to see if a circle contains another circle within it
+		Checks to see if a circle contains a cartesian point within it
 		@param input the CartesianPoint were comparing to
+		@return returns a boolean to tell whether a circle contains another cartesian point
 	*/
 	public boolean contains(CartesianPoint input) {
 		//radius minus the distance from center to point 
