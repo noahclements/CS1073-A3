@@ -69,14 +69,15 @@ public class Circle{
 	}
 
 	public double distanceTo(Circle input) {
-		
+		double distanceTo;
 		if(contains(input) == true) {
-			return 0;
+			distanceTo = 0;
 		} else if(intersects(input) == true) {
-			return 0;
+			distanceTo = 0;
 		} else { 
-			return center.distance(input.getCenter()) - radius - input.getRadius();		
+			distanceTo = center.distance(input.getCenter()) - radius - input.getRadius();		
 		}
+		return distanceTo;
 	}	 
 
 
@@ -92,27 +93,26 @@ public class Circle{
 	
 	
 	public boolean contains(Circle other) {
-		double circleDistance = radius - other.getRadius();
-
+		//double circleDistance = radius - other.getRadius();
+		boolean containsCircle;
 		if(center.distance(other.getCenter()) <= (radius - other.getRadius())) {
-			return true;
+			containsCircle = true;
 		} else {
-			return false;
+			containsCircle = false;
 		}
+		return containsCircle;
 	}
 
 
 	public boolean contains(CartesianPoint input) {
 		//radius minus the distance from center to point 
-
-		double cartesianDistance = radius - center.distance(input);
-
-		if(cartesianDistance < radius) {
-			return true;
+		boolean containsCartesian;
+		if(center.distance(input) < radius) {
+			containsCartesian = true;
 		} else {
-			return false;
+			containsCartesian = false;
 		}
-
+		return containsCartesian;
 	}
 	
 }

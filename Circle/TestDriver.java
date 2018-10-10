@@ -97,6 +97,33 @@ public class TestDriver {
 		System.out.println("C6 is " + C6.distanceTo(C7) + " away from C7");
 	}
 
+	
+
+	// if statement test w/ nested ifs
+
+	if(C5.intersects(C6) == true) {
+		if(C5.contains(C6) == true) {
+			System.out.println("C5 contains C6");
+		} else {
+			System.out.println("C5 intersects with C6");
+		}
+	} else {
+		System.out.println("C5 is " + C5.distanceTo(C6) + " away from C6");
+	}
+
+
+
+	if(C5.intersects(C7) == true) {
+		if(C5.contains(C7) == true) {
+			System.out.println("C5 contains C7");
+		} else {
+			System.out.println("C5 intersects with C7");
+		}
+	} else {
+		System.out.println("C5 is " + C5.distanceTo(C7) + " away from C7");
+	}
+
+
 
 
 	}
